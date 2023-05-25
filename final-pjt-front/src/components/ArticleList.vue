@@ -74,7 +74,7 @@ export default {
     },
     createArticle(){
       if (this.isLogin) {this.$router.push({name: 'CreateView'})}
-      else { alert('로그인을해야죠') }
+      else { alert('로그인을 해주세요') }
     }
   },
   created() {

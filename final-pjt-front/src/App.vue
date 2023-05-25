@@ -120,7 +120,8 @@ export default {
       }
     },
     goToMoneyChange() {
-      this.$router.push({ path: '/moneychange' });
+      if (this.$route.path !== '/moneychange') {
+      this.$router.push({ path: '/moneychange' });}
     },
     goToFooter() {
       window.scrollTo({
